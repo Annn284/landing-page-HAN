@@ -1,0 +1,1718 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAN — Phụ Kiện Tóc & Thời Trang Tinh Tế</title>
+  <meta name="description" content="Khám phá phụ kiện tóc và thời trang tinh tế từ HAN. Kẹp càng cua, scrunchie lụa, băng đô, khăn lụa giúp bạn hoàn thiện outfit và tự tin thể hiện phong cách riêng.">
+
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              cream: '#FAF7F2',
+              ivory: '#F5EFEB',
+              card: '#FFFFFF',
+              border: '#EAE1D7',
+              cacao: '#3C2A21',
+              cacaoLight: '#574136',
+              cacaoMuted: '#7D685C',
+              blush: '#E8A598',
+              blushDark: '#D48677',
+              blushSoft: '#F8E8E4',
+              goldSoft: '#D9B78F'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            'soft': '0 8px 30px rgba(60, 42, 33, 0.05)',
+            'card': '0 12px 35px rgba(60, 42, 33, 0.08)',
+            'hover': '0 20px 40px rgba(60, 42, 33, 0.12)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* Custom Scrollbar & Utility styling */
+    ::-webkit-scrollbar {
+      width: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FAF7F2;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #D8C7B9;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #C4AFA0;
+    }
+    .badge-blur {
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+  </style>
+</head>
+<body class="bg-brand-cream text-brand-cacao font-sans antialiased selection:bg-brand-blushSoft selection:text-brand-cacao">
+
+  <!-- ========================================================================= -->
+  <!-- TOP BANNER (Thông báo ưu đãi tinh tế) -->
+  <!-- ========================================================================= -->
+  <div class="bg-brand-cacao text-brand-cream text-xs py-2 px-4 text-center font-medium tracking-wide flex items-center justify-center gap-2">
+    <span class="inline-block w-1.5 h-1.5 rounded-full bg-brand-blush animate-pulse"></span>
+    <span>Miễn phí giao hàng toàn quốc cho đơn hàng từ <strong>199.000Đ</strong> &bull; Hỗ trợ đồng kiểm trước khi nhận</span>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- NAVIGATION BAR (Header tinh tế) -->
+  <!-- ========================================================================= -->
+  <header id="navbar" class="sticky top-0 z-40 bg-brand-cream/90 badge-blur border-b border-brand-border/60 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo thương hiệu HAN -->
+      <a href="#" class="flex items-center gap-2 group">
+        <span class="font-serif text-3xl font-bold tracking-widest text-brand-cacao group-hover:text-brand-blushDark transition-colors">HAN</span>
+        <span class="hidden sm:inline-block w-1 h-1 rounded-full bg-brand-blush"></span>
+        <span class="hidden sm:inline-block text-[11px] uppercase tracking-widest text-brand-cacaoMuted font-medium pt-1">Atelier Studio</span>
+      </a>
+
+      <!-- Menu máy tính (Desktop Navigation) -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-brand-cacaoLight">
+        <a href="#hero" class="hover:text-brand-cacao transition-colors">Trang chủ</a>
+        <a href="#trust" class="hover:text-brand-cacao transition-colors">Cam kết & Đánh giá</a>
+        <a href="#catalog" class="hover:text-brand-cacao transition-colors">Bộ sưu tập</a>
+        <a href="#lookbook" class="hover:text-brand-cacao transition-colors">Gợi ý phối đồ</a>
+        <a href="#special-offer" class="hover:text-brand-cacao text-brand-blushDark font-semibold transition-colors flex items-center gap-1">
+          Ưu đãi độc quyền
+          <span class="text-[10px] bg-brand-blushSoft text-brand-blushDark px-1.5 py-0.5 rounded font-bold uppercase">Hot</span>
+        </a>
+        <a href="#faq" class="hover:text-brand-cacao transition-colors">Hỏi đáp</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-3">
+        <!-- Hotline quick call -->
+        <a href="tel:0878267765" class="hidden lg:flex items-center gap-2 text-xs font-medium text-brand-cacaoMuted hover:text-brand-cacao transition-colors bg-brand-ivory px-3 py-2 rounded-full border border-brand-border">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-brand-blushDark"></i>
+          <span>0878.267.765</span>
+        </a>
+
+        <!-- Nút Giỏ hàng / Đơn hàng -->
+        <button onclick="toggleCartModal(true)" class="relative p-2.5 rounded-full bg-brand-ivory hover:bg-brand-blushSoft border border-brand-border text-brand-cacao transition-colors" aria-label="Xem giỏ hàng">
+          <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+          <span id="cartCountBadge" class="absolute -top-1 -right-1 w-5 h-5 bg-brand-blush text-white text-[10px] font-bold rounded-full flex items-center justify-center">1</span>
+        </button>
+
+        <!-- Nút Tư vấn nhanh -->
+        <button onclick="openConsultationModal()" class="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold bg-brand-cacao text-brand-cream hover:bg-brand-cacaoLight px-4 py-2.5 rounded-full transition-all shadow-sm">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5 text-brand-blush"></i>
+          <span>Tư vấn 1:1</span>
+        </button>
+
+        <!-- Mobile Menu Hamburger -->
+        <button onclick="toggleMobileMenu()" class="md:hidden p-2 text-brand-cacao hover:text-brand-blushDark focus:outline-none" aria-label="Menu">
+          <i data-lucide="menu" id="menuIcon" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden md:hidden bg-brand-cream border-b border-brand-border px-6 py-5 space-y-4 shadow-lg animate-fadeIn">
+      <a href="#hero" onclick="toggleMobileMenu()" class="block text-base font-medium text-brand-cacao">Trang chủ</a>
+      <a href="#trust" onclick="toggleMobileMenu()" class="block text-base font-medium text-brand-cacao">Cam kết & Đánh giá</a>
+      <a href="#catalog" onclick="toggleMobileMenu()" class="block text-base font-medium text-brand-cacao">Bộ sưu tập phụ kiện</a>
+      <a href="#lookbook" onclick="toggleMobileMenu()" class="block text-base font-medium text-brand-cacao">Gợi ý phối đồ</a>
+      <a href="#special-offer" onclick="toggleMobileMenu()" class="block text-base font-semibold text-brand-blushDark">Ưu đãi nổi bật</a>
+      <a href="#faq" onclick="toggleMobileMenu()" class="block text-base font-medium text-brand-cacao">Câu hỏi thường gặp</a>
+      <div class="pt-3 border-t border-brand-border flex items-center justify-between">
+        <span class="text-sm text-brand-cacaoMuted">Hotline: 0878.267.765</span>
+        <button onclick="openConsultationModal(); toggleMobileMenu();" class="text-xs font-bold text-brand-cream bg-brand-cacao px-3 py-1.5 rounded-full">
+          Nhắn tư vấn
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- KHỐI 1 — HERO SECTION | ATTENTION (Thu hút trong 3 giây đầu) -->
+  <!-- ========================================================================= -->
+  <section id="hero" class="relative overflow-hidden pt-6 pb-16 lg:pt-12 lg:pb-24 border-b border-brand-border/50">
+    <!-- Decorative background elements -->
+    <div class="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-brand-blushSoft/60 blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/2 -right-24 w-80 h-80 rounded-full bg-brand-ivory/80 blur-2xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+        <!-- Cột nội dung văn bản (7 cột desktop) -->
+        <div class="lg:col-span-7 space-y-6 text-left">
+          
+          <!-- Brand Badge -->
+          <div class="inline-flex items-center gap-2 bg-brand-ivory border border-brand-border px-3.5 py-1.5 rounded-full shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-brand-blush"></span>
+            <span class="text-xs font-semibold tracking-wider uppercase text-brand-cacaoLight">Bộ Sưu Tập Phụ Kiện Tóc & Thời Trang 2025</span>
+          </div>
+
+          <!-- Headline nổi bật theo yêu cầu -->
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl text-brand-cacao font-normal leading-[1.15] tracking-tight">
+            Một điểm chạm nhỏ, <br>
+            <span class="italic font-medium text-brand-cacao">nâng tầm phong cách riêng.</span>
+          </h1>
+
+          <!-- Subheadline chuẩn yêu cầu -->
+          <p class="text-base sm:text-lg text-brand-cacaoMuted font-light leading-relaxed max-w-xl">
+            Khám phá phụ kiện tóc và thời trang tinh tế, giúp bạn hoàn thiện outfit và tự tin thể hiện cá tính mỗi ngày.
+          </p>
+
+          <!-- Điểm chạm nhận diện sản phẩm nhanh trong 3 giây -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+            <div class="bg-white/80 p-3 rounded-xl border border-brand-border text-center shadow-soft">
+              <span class="text-lg">✨</span>
+              <p class="text-xs font-semibold text-brand-cacao mt-1">Kẹp càng cua</p>
+              <p class="text-[11px] text-brand-cacaoMuted">Ôm tóc nhẹ êm</p>
+            </div>
+            <div class="bg-white/80 p-3 rounded-xl border border-brand-border text-center shadow-soft">
+              <span class="text-lg">🎀</span>
+              <p class="text-xs font-semibold text-brand-cacao mt-1">Scrunchie lụa</p>
+              <p class="text-[11px] text-brand-cacaoMuted">Không hằn nếp gãy</p>
+            </div>
+            <div class="bg-white/80 p-3 rounded-xl border border-brand-border text-center shadow-soft">
+              <span class="text-lg">🕊️</span>
+              <p class="text-xs font-semibold text-brand-cacao mt-1">Băng đô nhung</p>
+              <p class="text-[11px] text-brand-cacaoMuted">Tôn dáng khuôn mặt</p>
+            </div>
+            <div class="bg-white/80 p-3 rounded-xl border border-brand-border text-center shadow-soft">
+              <span class="text-lg">🧣</span>
+              <p class="text-xs font-semibold text-brand-cacao mt-1">Khăn lụa vintage</p>
+              <p class="text-[11px] text-brand-cacaoMuted">Đa năng phối đồ</p>
+            </div>
+          </div>
+
+          <!-- Bộ đôi CTA chuẩn yêu cầu -->
+          <div class="pt-3 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <!-- CTA Chính -->
+            <a href="#catalog" class="inline-flex items-center justify-center gap-2 bg-brand-cacao hover:bg-brand-cacaoLight text-brand-cream font-semibold px-8 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-lg text-sm sm:text-base group">
+              <span>Khám phá bộ sưu tập</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-brand-blush group-hover:translate-x-1 transition-transform"></i>
+            </a>
+
+            <!-- CTA Phụ -->
+            <a href="#lookbook" class="inline-flex items-center justify-center gap-2 bg-transparent hover:bg-brand-ivory text-brand-cacao font-semibold px-7 py-4 rounded-full border border-brand-border transition-colors text-sm sm:text-base">
+              <i data-lucide="sparkles" class="w-4 h-4 text-brand-blushDark"></i>
+              <span>Tìm món phụ kiện dành cho bạn</span>
+            </a>
+          </div>
+
+          <!-- Cam kết nhanh ngay tại Hero -->
+          <div class="flex items-center gap-6 pt-2 text-xs text-brand-cacaoMuted border-t border-brand-border/60">
+            <div class="flex items-center gap-1.5">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-blushDark"></i>
+              <span>100% Ảnh chụp thực tế</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <i data-lucide="shield-check" class="w-4 h-4 text-brand-blushDark"></i>
+              <span>Đồng kiểm khi nhận</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <i data-lucide="refresh-cw" class="w-4 h-4 text-brand-blushDark"></i>
+              <span>Đổi trả 7 ngày</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Cột hình ảnh thị giác (5 cột desktop) - Layout Editorial sang trọng -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            
+            <!-- Khung ảnh chính: Lifestyle mẫu phối phụ kiện tóc -->
+            <div class="relative overflow-hidden rounded-3xl bg-brand-ivory border-4 border-white shadow-card aspect-[4/5] group">
+              <img 
+                src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=900&q=80" 
+                alt="Phụ kiện tóc HAN - Cô gái thanh lịch phối kẹp tóc tối giản" 
+                class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                loading="eager"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-cacao/40 via-transparent to-transparent"></div>
+
+              <!-- Floating Tag: Lookbook signature -->
+              <div class="absolute bottom-5 left-5 right-5 p-4 rounded-2xl bg-white/90 badge-blur border border-white/60 shadow-soft">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <span class="text-[10px] uppercase font-bold tracking-widest text-brand-blushDark">Signature Item</span>
+                    <h4 class="font-serif text-sm font-semibold text-brand-cacao">Kẹp Càng Cua Dáng Pháp Bán Nguyệt</h4>
+                    <p class="text-xs text-brand-cacaoMuted font-medium">Chất liệu nhựa Acetate bóng mờ &bull; 45.000Đ</p>
+                  </div>
+                  <button onclick="quickViewProduct('clip-french')" class="p-2 rounded-full bg-brand-cream hover:bg-brand-blushSoft text-brand-cacao transition-colors" title="Xem nhanh">
+                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Badge Phụ kiện Cận Cảnh 1: Scrunchie lụa -->
+            <div class="absolute -top-4 -left-6 hidden sm:flex items-center gap-3 bg-white p-2.5 pr-4 rounded-2xl shadow-card border border-brand-border animate-bounce" style="animation-duration: 4s;">
+              <div class="w-11 h-11 rounded-xl overflow-hidden bg-brand-ivory">
+                <img src="https://images.unsplash.com/photo-1620012253295-c15c429fbb39?auto=format&fit=crop&w=200&q=80" alt="Scrunchie lụa ngọc trai" class="w-full h-full object-cover" />
+              </div>
+              <div class="text-left">
+                <p class="text-[11px] font-bold text-brand-cacao">Silk Scrunchie</p>
+                <p class="text-[10px] text-brand-cacaoMuted">Bảo vệ nếp tóc êm</p>
+              </div>
+            </div>
+
+            <!-- Floating Badge Phụ kiện Cận Cảnh 2: Hộp quà tinh tế -->
+            <div class="absolute -bottom-4 -right-4 hidden sm:flex items-center gap-2.5 bg-brand-cacao text-white px-3.5 py-2.5 rounded-2xl shadow-card">
+              <i data-lucide="gift" class="w-4 h-4 text-brand-blush"></i>
+              <span class="text-xs font-medium">Tặng kèm hộp quà HAN nơ lụa</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- KHỐI 2 — SOCIAL PROOF | TRUST (Tạo niềm tin ban đầu) -->
+  <!-- ========================================================================= -->
+  <section id="trust" class="py-16 sm:py-20 bg-brand-ivory/60 border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Tiêu đề khối Social Proof -->
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs font-bold tracking-widest text-brand-blushDark uppercase">Niềm Tin Từ Trải Nghiệm Thật</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-brand-cacao font-normal mt-2">
+          Được yêu thích bởi sự tỉ mỉ và chân thực
+        </h2>
+        <p class="text-sm sm:text-base text-brand-cacaoMuted mt-3 font-light leading-relaxed">
+          Không cần những lời quảng cáo phô trương, HAN trân trọng sự hài lòng của từng khách hàng qua chất lượng sản phẩm và sự chăm chút trong từng đơn hàng.
+        </p>
+      </div>
+
+      <!-- 4 Cam kết minh bạch và có thể kiểm chứng -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        
+        <div class="bg-white p-6 rounded-2xl border border-brand-border/80 shadow-soft hover:shadow-card transition-all duration-300">
+          <div class="w-12 h-12 rounded-xl bg-brand-blushSoft/80 flex items-center justify-center text-brand-blushDark mb-4">
+            <i data-lucide="camera" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-serif text-lg font-semibold text-brand-cacao mb-1.5">Ảnh Thật & Video Thật</h3>
+          <p class="text-xs text-brand-cacaoMuted leading-relaxed">
+            100% hình ảnh sản phẩm do studio HAN tự chụp với ánh sáng tự nhiên, cam kết mẫu mã và màu sắc chuẩn xác khi đến tay bạn.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-brand-border/80 shadow-soft hover:shadow-card transition-all duration-300">
+          <div class="w-12 h-12 rounded-xl bg-brand-blushSoft/80 flex items-center justify-center text-brand-blushDark mb-4">
+            <i data-lucide="eye" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-serif text-lg font-semibold text-brand-cacao mb-1.5">Đồng Kiểm Khi Nhận</h3>
+          <p class="text-xs text-brand-cacaoMuted leading-relaxed">
+            Bạn được kiểm tra kỹ phụ kiện trước khi thanh toán. Chỉ nhận hàng khi sản phẩm nguyên vẹn, ưng ý và chuẩn mẫu bạn đã chọn.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-brand-border/80 shadow-soft hover:shadow-card transition-all duration-300">
+          <div class="w-12 h-12 rounded-xl bg-brand-blushSoft/80 flex items-center justify-center text-brand-blushDark mb-4">
+            <i data-lucide="refresh-cw" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-serif text-lg font-semibold text-brand-cacao mb-1.5">Đổi Hàng Dễ Dàng 7 Ngày</h3>
+          <p class="text-xs text-brand-cacaoMuted leading-relaxed">
+            Hỗ trợ đổi mẫu hoặc đổi màu miễn phí nếu có bất kỳ lỗi sản xuất nào hoặc bạn muốn đổi sang kích thước kẹp phù hợp hơn với tóc.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-brand-border/80 shadow-soft hover:shadow-card transition-all duration-300">
+          <div class="w-12 h-12 rounded-xl bg-brand-blushSoft/80 flex items-center justify-center text-brand-blushDark mb-4">
+            <i data-lucide="heart-handshake" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-serif text-lg font-semibold text-brand-cacao mb-1.5">Tư Vấn Phối Đồ 1:1</h3>
+          <p class="text-xs text-brand-cacaoMuted leading-relaxed">
+            Đội ngũ HAN hỗ trợ tư vấn chọn mẫu kẹp theo độ dày mỏng của tóc và phong cách trang phục bạn đi làm, đi tiệc hay đi học.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Đánh giá thực tế từ khách hàng (Testimonials & Feedback) -->
+      <div class="mb-14">
+        <h3 class="font-serif text-2xl text-center text-brand-cacao mb-8">
+          Khách hàng chia sẻ sau khi trải nghiệm HAN
+        </h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- Review 1 -->
+          <div class="bg-white p-7 rounded-2xl border border-brand-border shadow-soft relative flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="flex items-center gap-1 text-amber-500">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <p class="text-xs font-semibold text-brand-blushDark">Kẹp càng cua dáng Pháp &bull; Màu Trà Sữa</p>
+              <p class="text-sm text-brand-cacaoMuted italic leading-relaxed">
+                “Tóc mình thuộc dạng dày và dài, trước giờ mua kẹp ngoài chợ hay bị tuột hoặc gãy răng kẹp. Dùng thử kẹp của HAN thấy lò xo rất chắc, ôm gọn cả búi tóc mà không bị nặng đầu cả ngày làm việc ở văn phòng.”
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-5 mt-4 border-t border-brand-border/60">
+              <div class="w-9 h-9 rounded-full bg-brand-blushSoft text-brand-blushDark font-serif font-bold flex items-center justify-center text-xs">
+                TN
+              </div>
+              <div>
+                <p class="text-xs font-bold text-brand-cacao">Thảo Nguyên</p>
+                <p class="text-[11px] text-brand-cacaoMuted">Nhân viên văn phòng, Hà Nội</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="bg-white p-7 rounded-2xl border border-brand-border shadow-soft relative flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="flex items-center gap-1 text-amber-500">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <p class="text-xs font-semibold text-brand-blushDark">Set Scrunchie Lụa Satin Cao Cấp</p>
+              <p class="text-sm text-brand-cacaoMuted italic leading-relaxed">
+                “Scrunchie lụa mềm cực kỳ, tháo tóc ra không hề bị vướng hay rụng sợi nào. Đóng gói hộp giấy có nơ rất xinh và thơm, mình dùng làm quà sinh nhật cho bạn thân bạn ấy thích mê luôn.”
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-5 mt-4 border-t border-brand-border/60">
+              <div class="w-9 h-9 rounded-full bg-brand-blushSoft text-brand-blushDark font-serif font-bold flex items-center justify-center text-xs">
+                ML
+              </div>
+              <div>
+                <p class="text-xs font-bold text-brand-cacao">Mai Linh</p>
+                <p class="text-[11px] text-brand-cacaoMuted">Sinh viên ĐH Quốc Gia, TP.HCM</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="bg-white p-7 rounded-2xl border border-brand-border shadow-soft relative flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="flex items-center gap-1 text-amber-500">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <p class="text-xs font-semibold text-brand-blushDark">Khăn Lụa Vuông Turban Phối Họa Tiết</p>
+              <p class="text-sm text-brand-cacaoMuted italic leading-relaxed">
+                “Khăn lụa vải óng ả, đường viền may cẩn thận. Mình vừa dùng buộc tóc đuôi ngựa, vừa quàng cổ áo sơ mi trắng đi gặp khách hàng thấy outfit sang lên hẳn. Đúng chuẩn một điểm chạm nhỏ nâng tầm phong cách.”
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-5 mt-4 border-t border-brand-border/60">
+              <div class="w-9 h-9 rounded-full bg-brand-blushSoft text-brand-blushDark font-serif font-bold flex items-center justify-center text-xs">
+                PA
+              </div>
+              <div>
+                <p class="text-xs font-bold text-brand-cacao">Phương Anh</p>
+                <p class="text-[11px] text-brand-cacaoMuted">Content Creator, Đà Nẵng</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Kênh bán hàng và kết nối chính thức -->
+      <div class="bg-white/80 rounded-2xl p-6 border border-brand-border flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-brand-blushSoft flex items-center justify-center text-brand-blushDark">
+            <i data-lucide="badge-check" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="text-sm font-semibold text-brand-cacao">Kênh Mua Sắm & Mạng Xã Hội Chính Thức Của HAN</h4>
+            <p class="text-xs text-brand-cacaoMuted">Theo dõi chúng mình để cập nhật video hướng dẫn phối đồ và ưu đãi mỗi tuần</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 text-xs font-medium">
+          <a href="https://facebook.com" target="_blank" rel="noopener" class="flex items-center gap-1.5 text-brand-cacao hover:text-brand-blushDark transition-colors">
+            <i data-lucide="facebook" class="w-4 h-4"></i>
+            <span>Facebook</span>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="flex items-center gap-1.5 text-brand-cacao hover:text-brand-blushDark transition-colors">
+            <i data-lucide="instagram" class="w-4 h-4"></i>
+            <span>Instagram</span>
+          </a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener" class="flex items-center gap-1.5 text-brand-cacao hover:text-brand-blushDark transition-colors">
+            <i data-lucide="video" class="w-4 h-4"></i>
+            <span>TikTok Shop</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- KHỐI 3 — FEATURES/BENEFITS | INTEREST & DESIRE (Khơi gợi nhu cầu) -->
+  <!-- ========================================================================= -->
+  <section id="catalog" class="py-16 sm:py-24 bg-brand-cream border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-xs font-bold tracking-widest text-brand-blushDark uppercase">Bộ Sưu Tập Tuyển Chọn</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-brand-cacao font-normal mt-2">
+          Những món phụ kiện làm nên dấu ấn
+        </h2>
+        <p class="text-sm sm:text-base text-brand-cacaoMuted mt-3 font-light leading-relaxed">
+          Được thiết kế tinh gọn, mang lại cảm giác êm ái cho mái tóc và dễ dàng nâng tầm mọi outfit thường nhật.
+        </p>
+
+        <!-- Category Tabs Filter -->
+        <div class="flex flex-wrap justify-center gap-2 mt-8" id="categoryFilters">
+          <button onclick="filterCatalog('all', this)" class="cat-filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all bg-brand-cacao text-brand-cream shadow-sm">
+            Tất cả mẫu
+          </button>
+          <button onclick="filterCatalog('claw', this)" class="cat-filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all bg-brand-ivory text-brand-cacao hover:bg-brand-blushSoft border border-brand-border">
+            Kẹp càng cua & Kẹp tóc
+          </button>
+          <button onclick="filterCatalog('scrunchie', this)" class="cat-filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all bg-brand-ivory text-brand-cacao hover:bg-brand-blushSoft border border-brand-border">
+            Scrunchies lụa & Dây buộc
+          </button>
+          <button onclick="filterCatalog('bow', this)" class="cat-filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all bg-brand-ivory text-brand-cacao hover:bg-brand-blushSoft border border-brand-border">
+            Nơ, ruy băng & Băng đô
+          </button>
+          <button onclick="filterCatalog('scarf', this)" class="cat-filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all bg-brand-ivory text-brand-cacao hover:bg-brand-blushSoft border border-brand-border">
+            Khăn lụa & Phụ kiện phối
+          </button>
+        </div>
+      </div>
+
+      <!-- Lưới sản phẩm trực quan (Product Grid) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8" id="productGrid">
+        
+        <!-- Sản phẩm 1: Kẹp càng cua dáng Pháp -->
+        <div class="product-item group bg-white rounded-2xl overflow-hidden border border-brand-border shadow-soft hover:shadow-card transition-all duration-300 flex flex-col justify-between" data-category="claw">
+          <div>
+            <div class="relative overflow-hidden aspect-square bg-brand-ivory">
+              <img 
+                src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=600&q=80" 
+                alt="Kẹp Càng Cua Dáng Pháp" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <span class="absolute top-3 left-3 text-[10px] font-bold uppercase tracking-wider bg-brand-cacao text-brand-cream px-2.5 py-1 rounded-full">
+                Best Seller
+              </span>
+              <button onclick="quickViewProduct('clip-french')" class="absolute bottom-3 right-3 p-2 bg-white/90 hover:bg-white text-brand-cacao rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity" title="Xem nhanh">
+                <i data-lucide="eye" class="w-4 h-4"></i>
+              </button>
+            </div>
+            <div class="p-5 space-y-2">
+              <div class="text-[11px] font-medium text-brand-cacaoMuted uppercase tracking-wider">Kẹp càng cua</div>
+              <h3 class="font-serif text-base font-semibold text-brand-cacao group-hover:text-brand-blushDark transition-colors">
+                Kẹp Bán Nguyệt Phong Cách Pháp
+              </h3>
+              <p class="text-xs text-brand-cacaoMuted leading-relaxed line-clamp-2">
+                Chất liệu nhựa nhám mịn cao cấp, lò xo thép bền bỉ, ôm giữ nếp búi tóc chắc chắn mà không gây đau đầu.
+              </p>
+              <div class="flex items-center gap-1.5 text-[11px] text-emerald-700 font-medium">
+                <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                <span>Phù hợp tóc mỏng đến tóc dày vừa</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-5 pt-0 border-t border-brand-border/40 mt-3 flex items-center justify-between">
+            <div>
+              <span class="text-xs text-brand-cacaoMuted line-through mr-1">55.000Đ</span>
+              <span class="text-base font-bold text-brand-cacao">45.000Đ</span>
+            </div>
+            <button onclick="quickViewProduct('clip-french')" class="text-xs font-semibold text-brand-blushDark hover:text-brand-cacao underline underline-offset-4 transition-colors">
+              Chọn mẫu &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Sản phẩm 2: Scrunchie lụa ngọc trai -->
+        <div class="product-item group bg-white rounded-2xl overflow-hidden border border-brand-border shadow-soft hover:shadow-card transition-all duration-300 flex flex-col justify-between" data-category="scrunchie">
+          <div>
+            <div class="relative overflow-hidden aspect-square bg-brand-ivory">
+              <img 
+                src="https://images.unsplash.com/photo-1620012253295-c15c429fbb39?auto=format&fit=crop&w=600&q=80" 
+                alt="Scrunchie Lụa Satin Cao Cấp" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <span class="absolute top-3 left-3 text-[10px] font-bold uppercase tracking-wider bg-brand-blushDark text-white px-2.5 py-1 rounded-full">
+                Yêu thích
+              </span>
+              <button onclick="quickViewProduct('scrunchie-silk')" class="absolute bottom-3 right-3 p-2 bg-white/90 hover:bg-white text-brand-cacao rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity" title="Xem nhanh">
+                <i data-lucide="eye" class="w-4 h-4"></i>
+              </button>
+            </div>
+            <div class="p-5 space-y-2">
+              <div class="text-[11px] font-medium text-brand-cacaoMuted uppercase tracking-wider">Scrunchies</div>
+              <h3 class="font-serif text-base font-semibold text-brand-cacao group-hover:text-brand-blushDark transition-colors">
+                Scrunchie Lụa Satin Ngọc Trai
+              </h3>
+              <p class="text-xs text-brand-cacaoMuted leading-relaxed line-clamp-2">
+                Bề mặt lụa bóng mềm mại bảo vệ tóc tối đa, chun đàn hồi vừa vặn, không tạo nếp gãy khi xõa tóc.
+              </p>
+              <div class="flex items-center gap-1.5 text-[11px] text-emerald-700 font-medium">
+                <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                <span>Êm ái, tháo tóc không rụng sợi</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-5 pt-0 border-t border-brand-border/40 mt-3 flex items-center justify-between">
+            <div>
+              <span class="text-xs text-brand-cacaoMuted line-through mr-1">45.000Đ</span>
+              <span class="text-base font-bold text-brand-cacao">35.000Đ</span>
+            </div>
+            <button onclick="quickViewProduct('scrunchie-silk')" class="text-xs font-semibold text-brand-blushDark hover:text-brand-cacao underline underline-offset-4 transition-colors">
+              Chọn mẫu &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Sản phẩm 3: Nơ ruy băng nhung tiểu thư -->
+        <div class="product-item group bg-white rounded-2xl overflow-hidden border border-brand-border shadow-soft hover:shadow-card transition-all duration-300 flex flex-col justify-between" data-category="bow">
+          <div>
+            <div class="relative overflow-hidden aspect-square bg-brand-ivory">
+              <img 
+                src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" 
+                alt="Kẹp Nơ Nhung Cổ Điển" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <span class="absolute top-3 left-3 text-[10px] font-bold uppercase tracking-wider bg-brand-ivory text-brand-cacao border border-brand-border px-2.5 py-1 rounded-full">
+                New Arrival
+              </span>
+              <button onclick="quickViewProduct('bow-velvet')" class="absolute bottom-3 right-3 p-2 bg-white/90 hover:bg-white text-brand-cacao rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity" title="Xem nhanh">
+                <i data-lucide="eye" class="w-4 h-4"></i>
+              </button>
+            </div>
+            <div class="p-5 space-y-2">
+              <div class="text-[11px] font-medium text-brand-cacaoMuted uppercase tracking-wider">Nơ & Ruy băng</div>
+              <h3 class="font-serif text-base font-semibold text-brand-cacao group-hover:text-brand-blushDark transition-colors">
+                Kẹp Nơ Nhung Dài Tiểu Thư
+              </h3>
+              <p class="text-xs text-brand-cacaoMuted leading-relaxed line-clamp-2">
+                Chất liệu nhung tuyết mịn, tà ruy băng rủ tự nhiên tạo điểm nhấn duyên dáng cho kiểu tóc buộc nửa hoặc búi thấp.
+              </p>
+              <div class="flex items-center gap-1.5 text-[11px] text-emerald-700 font-medium">
+                <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                <span>Tôn dáng tóc cho hẹn hò, sự kiện</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-5 pt-0 border-t border-brand-border/40 mt-3 flex items-center justify-between">
+            <div>
+              <span class="text-xs text-brand-cacaoMuted line-through mr-1">60.000Đ</span>
+              <span class="text-base font-bold text-brand-cacao">49.000Đ</span>
+            </div>
+            <button onclick="quickViewProduct('bow-velvet')" class="text-xs font-semibold text-brand-blushDark hover:text-brand-cacao underline underline-offset-4 transition-colors">
+              Chọn mẫu &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Sản phẩm 4: Khăn lụa vuông đa năng -->
+        <div class="product-item group bg-white rounded-2xl overflow-hidden border border-brand-border shadow-soft hover:shadow-card transition-all duration-300 flex flex-col justify-between" data-category="scarf">
+          <div>
+            <div class="relative overflow-hidden aspect-square bg-brand-ivory">
+              <img 
+                src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=600&q=80" 
+                alt="Khăn Lụa Vuông Vintage Turban" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <span class="absolute top-3 left-3 text-[10px] font-bold uppercase tracking-wider bg-brand-cacao text-brand-cream px-2.5 py-1 rounded-full">
+                Must-have
+              </span>
+              <button onclick="quickViewProduct('scarf-vintage')" class="absolute bottom-3 right-3 p-2 bg-white/90 hover:bg-white text-brand-cacao rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity" title="Xem nhanh">
+                <i data-lucide="eye" class="w-4 h-4"></i>
+              </button>
+            </div>
+            <div class="p-5 space-y-2">
+              <div class="text-[11px] font-medium text-brand-cacaoMuted uppercase tracking-wider">Khăn lụa phối đồ</div>
+              <h3 class="font-serif text-base font-semibold text-brand-cacao group-hover:text-brand-blushDark transition-colors">
+                Khăn Lụa Vuông Vintage (70x70cm)
+              </h3>
+              <p class="text-xs text-brand-cacaoMuted leading-relaxed line-clamp-2">
+                Họa tiết hình học thanh nhã, chất lụa mỏng nhẹ đa năng: buộc tóc đuôi ngựa, thắt nơ cổ áo, hoặc quấn quai túi xách.
+              </p>
+              <div class="flex items-center gap-1.5 text-[11px] text-emerald-700 font-medium">
+                <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                <span>Biến hóa 4 cách phối trong 1 món</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-5 pt-0 border-t border-brand-border/40 mt-3 flex items-center justify-between">
+            <div>
+              <span class="text-xs text-brand-cacaoMuted line-through mr-1">89.000Đ</span>
+              <span class="text-base font-bold text-brand-cacao">69.000Đ</span>
+            </div>
+            <button onclick="quickViewProduct('scarf-vintage')" class="text-xs font-semibold text-brand-blushDark hover:text-brand-cacao underline underline-offset-4 transition-colors">
+              Chọn mẫu &rarr;
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ===================================================================== -->
+      <!-- KHU VỰC GỢI Ý PHỐI PHỤ KIỆN VỚI OUTFIT (LOOKBOOK & STYLE GUIDE) -->
+      <!-- ===================================================================== -->
+      <div id="lookbook" class="mt-20 pt-16 border-t border-brand-border">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-xs font-bold tracking-widest text-brand-blushDark uppercase">Style Guide & Mix-Match</span>
+          <h3 class="font-serif text-3xl text-brand-cacao mt-2">
+            Gợi ý phối phụ kiện theo từng khoảnh khắc
+          </h3>
+          <p class="text-sm text-brand-cacaoMuted mt-2 font-light">
+            Không cần quá nhiều phụ kiện cầu kỳ, chỉ một món đồ đúng điệu sẽ khiến trang phục thường nhật của bạn trở nên cuốn hút.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Look 1: Đi làm / Văn phòng -->
+          <div class="bg-brand-ivory/60 rounded-3xl p-6 border border-brand-border hover:shadow-card transition-all">
+            <div class="aspect-[3/4] rounded-2xl overflow-hidden mb-5 bg-white relative">
+              <img 
+                src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=600&q=80" 
+                alt="Phối đồ công sở thanh lịch với kẹp tóc HAN" 
+                class="w-full h-full object-cover"
+              />
+              <span class="absolute bottom-3 left-3 bg-white/90 badge-blur text-[11px] font-bold text-brand-cacao px-3 py-1 rounded-full">
+                Office & Work Chic
+              </span>
+            </div>
+            <h4 class="font-serif text-lg font-semibold text-brand-cacao mb-2">Thanh Lịch & Gọn Gàng Nơi Công Sở</h4>
+            <p class="text-xs text-brand-cacaoMuted leading-relaxed mb-4">
+              Kết hợp áo sơ mi oversized hoặc blazer cùng <strong>Kẹp càng cua dáng Pháp màu hổ phách</strong>. Vừa giữ tóc gọn gàng suốt ngày dài làm việc, vừa tạo vẻ ngoài chuyên nghiệp, chỉn chu.
+            </p>
+            <div class="bg-white p-3 rounded-xl border border-brand-border/60 flex items-center justify-between text-xs">
+              <span class="text-brand-cacao font-medium">Gợi ý món phụ kiện:</span>
+              <button onclick="quickViewProduct('clip-french')" class="text-brand-blushDark font-bold hover:underline">Xem kẹp Pháp &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Look 2: Cuối tuần / Cà phê hẹn bạn -->
+          <div class="bg-brand-ivory/60 rounded-3xl p-6 border border-brand-border hover:shadow-card transition-all">
+            <div class="aspect-[3/4] rounded-2xl overflow-hidden mb-5 bg-white relative">
+              <img 
+                src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80" 
+                alt="Phối đồ dạo phố nhẹ nhàng với scrunchie HAN" 
+                class="w-full h-full object-cover"
+              />
+              <span class="absolute bottom-3 left-3 bg-white/90 badge-blur text-[11px] font-bold text-brand-cacao px-3 py-1 rounded-full">
+                Weekend Brunch & Cafe
+              </span>
+            </div>
+            <h4 class="font-serif text-lg font-semibold text-brand-cacao mb-2">Trẻ Trung & Năng Động Dạo Phố</h4>
+            <p class="text-xs text-brand-cacaoMuted leading-relaxed mb-4">
+              Phối đầm voan hoa nhí hoặc áo cardigan dệt kim mỏng cùng <strong>Scrunchie lụa satin ngọc trai</strong> buộc tóc nửa đầu lơi nhẹ. Tự nhiên, bay bổng và chụp ảnh check-in cực xinh.
+            </p>
+            <div class="bg-white p-3 rounded-xl border border-brand-border/60 flex items-center justify-between text-xs">
+              <span class="text-brand-cacao font-medium">Gợi ý món phụ kiện:</span>
+              <button onclick="quickViewProduct('scrunchie-silk')" class="text-brand-blushDark font-bold hover:underline">Xem Scrunchie &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Look 3: Hẹn hò lãng mạn / Đi tiệc -->
+          <div class="bg-brand-ivory/60 rounded-3xl p-6 border border-brand-border hover:shadow-card transition-all">
+            <div class="aspect-[3/4] rounded-2xl overflow-hidden mb-5 bg-white relative">
+              <img 
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" 
+                alt="Phối đồ hẹn hò với nơ tóc tiểu thư HAN" 
+                class="w-full h-full object-cover"
+              />
+              <span class="absolute bottom-3 left-3 bg-white/90 badge-blur text-[11px] font-bold text-brand-cacao px-3 py-1 rounded-full">
+                Romantic Date Night
+              </span>
+            </div>
+            <h4 class="font-serif text-lg font-semibold text-brand-cacao mb-2">Ngọt Ngào & Duyên Dáng Buổi Hẹn Hò</h4>
+            <p class="text-xs text-brand-cacaoMuted leading-relaxed mb-4">
+              Một chiếc đầm trễ vai hoặc áo lụa kết hợp với <strong>Kẹp nơ nhung dài</strong> kẹp sau gáy hoặc <strong>Khăn lụa thắt nơ</strong>. Mọi cử chỉ hất tóc hay nghiêng đầu đều tạo sự thu hút khó quên.
+            </p>
+            <div class="bg-white p-3 rounded-xl border border-brand-border/60 flex items-center justify-between text-xs">
+              <span class="text-brand-cacao font-medium">Gợi ý món phụ kiện:</span>
+              <button onclick="quickViewProduct('bow-velvet')" class="text-brand-blushDark font-bold hover:underline">Xem Kẹp Nơ &rarr;</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- KHỐI 4 — OFFER & PRICE | ACTION (Tạo động lực hành động) -->
+  <!-- ========================================================================= -->
+  <section id="special-offer" class="py-16 sm:py-24 bg-brand-cacao text-brand-cream relative overflow-hidden">
+    <!-- Glow effects -->
+    <div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-brand-blush/20 blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-brand-blushDark/10 blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      
+      <div class="bg-white/5 border border-white/10 rounded-3xl p-8 sm:p-12 lg:p-16 backdrop-blur-md shadow-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+          
+          <!-- Cột hình ảnh Combo Hộp Quà (5 cột) -->
+          <div class="lg:col-span-5">
+            <div class="relative rounded-2xl overflow-hidden aspect-square border-2 border-brand-blush/40 shadow-card bg-brand-cacaoLight">
+              <img 
+                src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80" 
+                alt="Combo Hộp Quà Phụ Kiện Tóc HAN" 
+                class="w-full h-full object-cover"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-cacao/80 via-transparent to-transparent"></div>
+              
+              <div class="absolute bottom-5 left-5 right-5 text-left">
+                <span class="inline-block text-[10px] font-bold uppercase tracking-widest bg-brand-blush text-brand-cacao px-3 py-1 rounded-full mb-2">
+                  Ưu Đãi Giới Hạn &bull; Hộp Quà Tặng Kèm
+                </span>
+                <p class="font-serif text-lg font-semibold text-white">The Daily Muse Box &bull; Set 3 Món</p>
+                <p class="text-xs text-brand-cream/80 font-light">1 Kẹp Càng Cua Pháp + 1 Scrunchie Lụa + 1 Khăn Lụa Turban</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cột thông tin giá & ưu đãi (7 cột) -->
+          <div class="lg:col-span-7 space-y-6 text-left">
+            
+            <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-brand-blush">
+              <i data-lucide="sparkle" class="w-4 h-4"></i>
+              <span>Gợi ý hoàn hảo cho bạn hoặc quà tặng người thương</span>
+            </div>
+
+            <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal leading-tight text-white">
+              Combo Phụ Kiện “The Daily Muse”
+            </h2>
+
+            <p class="text-sm sm:text-base text-brand-cream/80 font-light leading-relaxed">
+              Trọn bộ 3 món phụ kiện thiết yếu được các cô gái HAN yêu thích nhất. Đủ để bạn biến hóa phong cách mỗi ngày từ công sở đến buổi hẹn tối, được đóng gói trang trọng trong hộp quà thắt nơ lụa.
+            </p>
+
+            <!-- Bảng giá minh bạch -->
+            <div class="p-5 rounded-2xl bg-white/10 border border-white/15 space-y-3">
+              <div class="flex items-baseline justify-between flex-wrap gap-2">
+                <div>
+                  <span class="text-xs text-brand-cream/60 block mb-0.5">Giá bán lẻ từng món: [249.000Đ]</span>
+                  <div class="flex items-center gap-3">
+                    <span class="font-serif text-3xl sm:text-4xl font-bold text-brand-blush">[189.000Đ]</span>
+                    <span class="text-xs font-semibold bg-brand-blush/20 text-brand-blush px-2.5 py-1 rounded-full border border-brand-blush/30">
+                      [Ưu đãi combo: Tiết kiệm 60.000Đ]
+                    </span>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <span class="text-xs text-emerald-300 font-medium flex items-center gap-1">
+                    <i data-lucide="truck" class="w-3.5 h-3.5"></i>
+                    <span>Freeship toàn quốc đơn từ 199K</span>
+                  </span>
+                  <span class="text-[11px] text-brand-cream/60">Giao nhanh 1–3 ngày làm việc</span>
+                </div>
+              </div>
+
+              <!-- Chi tiết quà tặng kèm & điều kiện minh bạch -->
+              <div class="pt-3 border-t border-white/10 grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-brand-cream/90">
+                <div class="flex items-center gap-2">
+                  <i data-lucide="gift" class="w-4 h-4 text-brand-blush"></i>
+                  <span>Tặng kèm <strong>Hộp quà thắt nơ HAN</strong> (trị giá 25K)</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-brand-blush"></i>
+                  <span>Được chọn tone màu kẹp & khăn tùy thích</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Điều kiện áp dụng minh bạch -->
+            <p class="text-xs text-brand-cream/60 italic">
+              * Điều kiện: Áp dụng khi đặt hàng trực tiếp tại landing page hoặc qua hotline tư vấn. Được kiểm tra hàng trước khi nhận và hỗ trợ đổi trả trong 7 ngày nếu không ưng ý.
+            </p>
+
+            <!-- Bộ đôi CTA chuẩn yêu cầu -->
+            <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+              <!-- CTA Chính: Mua ngay -->
+              <button onclick="openOrderModal('Combo The Daily Muse', '189.000Đ')" class="inline-flex items-center justify-center gap-2 bg-brand-blush hover:bg-brand-blushDark text-brand-cacao hover:text-white font-bold px-8 py-4 rounded-full transition-all duration-300 shadow-lg text-base">
+                <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+                <span>Mua ngay</span>
+              </button>
+
+              <!-- CTA Phụ: Nhắn tin để được tư vấn -->
+              <button onclick="openConsultationModal()" class="inline-flex items-center justify-center gap-2 bg-transparent hover:bg-white/10 text-white font-semibold px-7 py-4 rounded-full border border-white/30 transition-colors text-base">
+                <i data-lucide="message-square" class="w-5 h-5 text-brand-blush"></i>
+                <span>Nhắn tin để được tư vấn</span>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- KHỐI 5 — FOOTER & TRUST | REASSURANCE (Giúp khách hàng an tâm trước khi mua) -->
+  <!-- ========================================================================= -->
+  <footer id="footer" class="bg-brand-ivory text-brand-cacao border-t border-brand-border">
+    
+    <!-- FAQ ACCORDION (Câu hỏi thường gặp) -->
+    <div id="faq" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 border-b border-brand-border">
+      <div class="text-center mb-10">
+        <span class="text-xs font-bold tracking-widest text-brand-blushDark uppercase">Giải Đáp Mọi Thắc Mắc</span>
+        <h3 class="font-serif text-3xl text-brand-cacao mt-2">Câu hỏi thường gặp</h3>
+        <p class="text-sm text-brand-cacaoMuted mt-2 font-light">Những điều khách hàng thường quan tâm trước khi đặt mua phụ kiện tại HAN.</p>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- FAQ 1 -->
+        <div class="bg-white rounded-2xl border border-brand-border overflow-hidden transition-all">
+          <button onclick="toggleFaq(this)" class="w-full px-6 py-4.5 text-left flex items-center justify-between gap-4 font-serif text-base font-semibold text-brand-cacao hover:text-brand-blushDark transition-colors">
+            <span>Tóc mỏng hoặc tóc quá dày thì dùng loại kẹp nào phù hợp?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-brand-cacaoMuted transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 pt-1 text-xs sm:text-sm text-brand-cacaoMuted leading-relaxed border-t border-brand-border/40">
+            Nếu bạn có mái tóc mỏng, HAN gợi ý các mẫu kẹp càng cua cỡ vừa (7-9cm) hoặc kẹp nơ bán nguyệt có răng khít để giữ tóc không bị trượt. Với mái tóc dày, bạn nên chọn kẹp càng cua dáng Pháp cỡ lớn (11-13cm) có độ cong sâu và lò xo thép lực kẹp cao. Bạn cũng có thể nhắn tin để HAN tư vấn mẫu chính xác theo ảnh chụp tóc của bạn nhé!
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="bg-white rounded-2xl border border-brand-border overflow-hidden transition-all">
+          <button onclick="toggleFaq(this)" class="w-full px-6 py-4.5 text-left flex items-center justify-between gap-4 font-serif text-base font-semibold text-brand-cacao hover:text-brand-blushDark transition-colors">
+            <span>Dây scrunchie lụa của HAN có dễ bị giãn nhão sau một thời gian dùng không?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-brand-cacaoMuted transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 pt-1 text-xs sm:text-sm text-brand-cacaoMuted leading-relaxed border-t border-brand-border/40">
+            Scrunchie của HAN sử dụng lõi chun dệt đàn hồi cao cấp kết hợp vỏ lụa satin/lụa tơ mềm. Chun có khả năng co giãn phục hồi tốt sau hàng trăm lần buộc, không bị bai dão như chun cao su thông thường, vừa giữ nếp êm vừa không gây đứt gãy tóc.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="bg-white rounded-2xl border border-brand-border overflow-hidden transition-all">
+          <button onclick="toggleFaq(this)" class="w-full px-6 py-4.5 text-left flex items-center justify-between gap-4 font-serif text-base font-semibold text-brand-cacao hover:text-brand-blushDark transition-colors">
+            <span>Tôi có được kiểm tra hàng trước khi thanh toán không?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-brand-cacaoMuted transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 pt-1 text-xs sm:text-sm text-brand-cacaoMuted leading-relaxed border-t border-brand-border/40">
+            Dạ hoàn toàn CÓ! HAN luôn áp dụng chính sách <strong>Đồng kiểm khi nhận hàng</strong>. Bạn được mở gói hàng kiểm tra xem mẫu mã, màu sắc có đúng như đặt mua và có nguyên vẹn hay không trước khi gửi tiền cho nhân viên giao hàng.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="bg-white rounded-2xl border border-brand-border overflow-hidden transition-all">
+          <button onclick="toggleFaq(this)" class="w-full px-6 py-4.5 text-left flex items-center justify-between gap-4 font-serif text-base font-semibold text-brand-cacao hover:text-brand-blushDark transition-colors">
+            <span>Chính sách đổi trả sản phẩm diễn ra như thế nào?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-brand-cacaoMuted transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 pt-1 text-xs sm:text-sm text-brand-cacaoMuted leading-relaxed border-t border-brand-border/40">
+            HAN hỗ trợ đổi sản phẩm trong vòng <strong>7 ngày</strong> kể từ khi bạn nhận hàng nếu sản phẩm có lỗi từ nhà sản xuất (lò xo kẹp hỏng, đường may lỗi) hoặc bạn muốn đổi sang màu khác. Bạn chỉ cần giữ sản phẩm còn nguyên tem mác và liên hệ hotline 0878267765 để được hỗ trợ nhanh nhất.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="bg-white rounded-2xl border border-brand-border overflow-hidden transition-all">
+          <button onclick="toggleFaq(this)" class="w-full px-6 py-4.5 text-left flex items-center justify-between gap-4 font-serif text-base font-semibold text-brand-cacao hover:text-brand-blushDark transition-colors">
+            <span>Thời gian giao hàng mất bao lâu và phí ship bao nhiêu?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-brand-cacaoMuted transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 pt-1 text-xs sm:text-sm text-brand-cacaoMuted leading-relaxed border-t border-brand-border/40">
+            Thời gian giao hàng nội thành Hà Nội & TP.HCM từ 1–2 ngày; các tỉnh thành khác từ 2–4 ngày làm việc. Phí ship đồng giá 25.000Đ toàn quốc và <strong>MIỄN PHÍ VẬN CHUYỂN</strong> cho tất cả đơn hàng từ 199.000Đ.
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- MAIN FOOTER INFO -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        
+        <!-- Cột 1: Thông tin thương hiệu HAN (2 cột desktop) -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="font-serif text-3xl font-bold tracking-widest text-brand-cacao">HAN</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-brand-blush"></span>
+          </div>
+          <p class="text-xs sm:text-sm text-brand-cacaoMuted font-light leading-relaxed max-w-sm">
+            HAN — Thương hiệu phụ kiện tóc và thời trang dành cho những cô gái trẻ yêu thích phong cách nữ tính, tinh tế và tối giản. Một điểm chạm nhỏ giúp bạn hoàn thiện outfit và tự tin tỏa sáng.
+          </p>
+
+          <!-- Thông tin liên hệ chính thức theo yêu cầu -->
+          <div class="space-y-2 pt-2 text-xs text-brand-cacaoLight">
+            <p class="flex items-center gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-brand-blushDark"></i>
+              <span>Hotline hỗ trợ: <a href="tel:0878267765" class="font-semibold text-brand-cacao hover:underline">0878267765</a></span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i data-lucide="mail" class="w-4 h-4 text-brand-blushDark"></i>
+              <span>Email: <a href="mailto:HAN429@gmail.com" class="font-semibold text-brand-cacao hover:underline">HAN429@gmail.com</a></span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i data-lucide="clock" class="w-4 h-4 text-brand-blushDark"></i>
+              <span>Giờ mở cửa: 08:30 – 21:30 (Thứ 2 – Chủ Nhật)</span>
+            </p>
+          </div>
+
+          <!-- Mạng xã hội chính thức theo yêu cầu -->
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-white border border-brand-border flex items-center justify-center text-brand-cacao hover:bg-brand-blushSoft hover:text-brand-blushDark transition-all" aria-label="Facebook">
+              <i data-lucide="facebook" class="w-4 h-4"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-white border border-brand-border flex items-center justify-center text-brand-cacao hover:bg-brand-blushSoft hover:text-brand-blushDark transition-all" aria-label="Instagram">
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-white border border-brand-border flex items-center justify-center text-brand-cacao hover:bg-brand-blushSoft hover:text-brand-blushDark transition-all" aria-label="TikTok">
+              <i data-lucide="video" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Cột 2: Danh mục sản phẩm -->
+        <div class="space-y-3">
+          <h4 class="font-serif text-sm font-bold uppercase tracking-wider text-brand-cacao">Bộ Sưu Tập</h4>
+          <ul class="space-y-2 text-xs text-brand-cacaoMuted">
+            <li><a href="#catalog" onclick="filterCatalog('claw')" class="hover:text-brand-cacao transition-colors">Kẹp tóc & Kẹp càng cua</a></li>
+            <li><a href="#catalog" onclick="filterCatalog('scrunchie')" class="hover:text-brand-cacao transition-colors">Scrunchies lụa & satin</a></li>
+            <li><a href="#catalog" onclick="filterCatalog('bow')" class="hover:text-brand-cacao transition-colors">Nơ ruy băng & Băng đô</a></li>
+            <li><a href="#catalog" onclick="filterCatalog('scarf')" class="hover:text-brand-cacao transition-colors">Khăn lụa vintage đa năng</a></li>
+            <li><a href="#special-offer" class="hover:text-brand-blushDark transition-colors font-medium">Hộp quà phụ kiện HAN</a></li>
+          </ul>
+        </div>
+
+        <!-- Cột 3: Chính sách mua sắm theo yêu cầu -->
+        <div class="space-y-3">
+          <h4 class="font-serif text-sm font-bold uppercase tracking-wider text-brand-cacao">Chính Sách Khách Hàng</h4>
+          <ul class="space-y-2 text-xs text-brand-cacaoMuted">
+            <li><a href="javascript:void(0)" onclick="openPolicyModal('shipping')" class="hover:text-brand-cacao transition-colors">Chính sách giao hàng & đồng kiểm</a></li>
+            <li><a href="javascript:void(0)" onclick="openPolicyModal('payment')" class="hover:text-brand-cacao transition-colors">Chính sách thanh toán (COD & Chuyển khoản)</a></li>
+            <li><a href="javascript:void(0)" onclick="openPolicyModal('return')" class="hover:text-brand-cacao transition-colors">Chính sách đổi trả 7 ngày</a></li>
+            <li><a href="javascript:void(0)" onclick="openPolicyModal('privacy')" class="hover:text-brand-cacao transition-colors">Chính sách bảo mật thông tin</a></li>
+          </ul>
+        </div>
+
+        <!-- Cột 4: Đăng ký nhận gợi ý phối đồ -->
+        <div class="space-y-3">
+          <h4 class="font-serif text-sm font-bold uppercase tracking-wider text-brand-cacao">Bản Tin Phong Cách</h4>
+          <p class="text-xs text-brand-cacaoMuted leading-relaxed">
+            Nhận cẩm nang phối đồ xu hướng mới và voucher 10% cho đơn hàng đầu tiên cùng HAN.
+          </p>
+          <form onsubmit="handleNewsletter(event)" class="space-y-2">
+            <div class="relative">
+              <input 
+                type="email" 
+                id="newsletterEmail" 
+                placeholder="Nhập email của bạn..." 
+                required
+                class="w-full text-xs px-3.5 py-2.5 rounded-full bg-white border border-brand-border text-brand-cacao placeholder:text-brand-cacaoMuted/60 focus:outline-none focus:border-brand-cacao"
+              />
+            </div>
+            <button type="submit" class="w-full text-xs font-semibold bg-brand-cacao text-brand-cream hover:bg-brand-cacaoLight py-2.5 rounded-full transition-colors">
+              Đăng ký nhận tin
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Bản quyền & Pháp lý -->
+      <div class="pt-10 mt-10 border-t border-brand-border/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-brand-cacaoMuted">
+        <p>&copy; 2025 HAN Atelier Studio. Tất cả các quyền được bảo lưu.</p>
+        <p class="text-[11px]">Thiết kế theo định vị thương hiệu phụ kiện tóc & thời trang tối giản.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- FLOATING ACTION BUTTONS (Liên hệ nhanh & Về đầu trang) -->
+  <!-- ========================================================================= -->
+  <div class="fixed bottom-6 right-6 z-30 flex flex-col items-end gap-3">
+    <!-- Nút gọi hotline -->
+    <a href="tel:0878267765" class="w-12 h-12 rounded-full bg-brand-cacao text-brand-cream hover:bg-brand-cacaoLight shadow-card flex items-center justify-center transition-all hover:scale-105 group" title="Gọi Hotline 0878267765">
+      <i data-lucide="phone-call" class="w-5 h-5 text-brand-blush"></i>
+      <span class="absolute right-14 bg-brand-cacao text-white text-xs px-3 py-1.5 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-md pointer-events-none">
+        Hotline: 0878.267.765
+      </span>
+    </a>
+
+    <!-- Nút Chat tư vấn Zalo / Messenger -->
+    <button onclick="openConsultationModal()" class="w-12 h-12 rounded-full bg-brand-blush hover:bg-brand-blushDark text-brand-cacao hover:text-white shadow-card flex items-center justify-center transition-all hover:scale-105 group" title="Tư vấn nhanh">
+      <i data-lucide="message-circle" class="w-6 h-6"></i>
+      <span class="absolute right-14 bg-brand-cacao text-white text-xs px-3 py-1.5 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-md pointer-events-none">
+        Nhắn tư vấn mẫu tóc
+      </span>
+    </button>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- MODAL 1: XEM CHI TIẾT SẢN PHẨM (QUICK VIEW) -->
+  <!-- ========================================================================= -->
+  <div id="quickViewModal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-brand-cacao/60 badge-blur flex items-center justify-center p-4">
+    <div class="relative w-full max-w-2xl bg-white rounded-3xl shadow-2xl border border-brand-border overflow-hidden animate-fadeIn">
+      <button onclick="closeQuickViewModal()" class="absolute top-4 right-4 z-10 p-2 rounded-full bg-brand-ivory hover:bg-brand-blushSoft text-brand-cacao transition-colors" aria-label="Đóng">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="aspect-square bg-brand-ivory relative">
+          <img id="qvImage" src="" alt="Sản phẩm" class="w-full h-full object-cover">
+          <span id="qvTag" class="absolute top-4 left-4 text-[10px] font-bold uppercase tracking-wider bg-brand-cacao text-brand-cream px-3 py-1 rounded-full"></span>
+        </div>
+
+        <div class="p-6 sm:p-8 flex flex-col justify-between space-y-4 text-left">
+          <div class="space-y-2">
+            <span id="qvCategory" class="text-[11px] font-bold tracking-widest text-brand-blushDark uppercase"></span>
+            <h3 id="qvTitle" class="font-serif text-xl sm:text-2xl font-semibold text-brand-cacao"></h3>
+            <div class="flex items-center gap-3">
+              <span id="qvPrice" class="font-serif text-xl font-bold text-brand-cacao"></span>
+              <span id="qvOldPrice" class="text-xs text-brand-cacaoMuted line-through"></span>
+            </div>
+            <p id="qvDescription" class="text-xs sm:text-sm text-brand-cacaoMuted leading-relaxed pt-2"></p>
+            
+            <!-- Key Benefits -->
+            <div class="space-y-1.5 pt-3 border-t border-brand-border/60 text-xs text-brand-cacao">
+              <p class="font-semibold text-brand-cacao">Lợi ích thực tế:</p>
+              <div id="qvBenefits" class="space-y-1 text-brand-cacaoMuted"></div>
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-brand-border flex items-center gap-3">
+            <button id="qvAddToCartBtn" onclick="addToCartFromModal()" class="flex-1 bg-brand-cacao hover:bg-brand-cacaoLight text-brand-cream text-xs sm:text-sm font-semibold py-3 px-4 rounded-full transition-colors flex items-center justify-center gap-2">
+              <i data-lucide="shopping-bag" class="w-4 h-4 text-brand-blush"></i>
+              <span>Thêm vào giỏ hàng</span>
+            </button>
+            <button id="qvBuyNowBtn" onclick="buyNowFromModal()" class="bg-brand-blush hover:bg-brand-blushDark text-brand-cacao hover:text-white text-xs sm:text-sm font-bold py-3 px-5 rounded-full transition-colors">
+              Mua ngay
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- MODAL 2: ĐẶT HÀNG NHANH / MUA NGAY (CHECKOUT FORM) -->
+  <!-- ========================================================================= -->
+  <div id="orderModal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-brand-cacao/60 badge-blur flex items-center justify-center p-4">
+    <div class="relative w-full max-w-lg bg-white rounded-3xl shadow-2xl border border-brand-border p-6 sm:p-8 animate-fadeIn text-left">
+      <button onclick="toggleOrderModal(false)" class="absolute top-4 right-4 p-2 rounded-full bg-brand-ivory hover:bg-brand-blushSoft text-brand-cacao transition-colors" aria-label="Đóng">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="mb-5">
+        <span class="text-[10px] font-bold tracking-widest text-brand-blushDark uppercase">Xác Nhận Đặt Hàng</span>
+        <h3 class="font-serif text-2xl font-semibold text-brand-cacao mt-1">Đặt Hàng Nhanh Cùng HAN</h3>
+        <p class="text-xs text-brand-cacaoMuted mt-1">Đồng kiểm trước khi nhận &bull; Thanh toán tiền mặt hoặc chuyển khoản khi nhận hàng.</p>
+      </div>
+
+      <!-- Tóm tắt sản phẩm đang chọn -->
+      <div class="p-4 rounded-2xl bg-brand-ivory border border-brand-border mb-5 flex items-center justify-between">
+        <div>
+          <p id="orderItemName" class="font-serif text-sm font-semibold text-brand-cacao">Combo The Daily Muse</p>
+          <p class="text-xs text-brand-cacaoMuted">Kèm Hộp Quà HAN thắt nơ cao cấp</p>
+        </div>
+        <div class="text-right">
+          <p id="orderItemPrice" class="font-serif text-base font-bold text-brand-cacao">189.000Đ</p>
+          <span class="text-[10px] text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded font-medium">Freeship từ 199K</span>
+        </div>
+      </div>
+
+      <!-- Form nhập thông tin khách hàng -->
+      <form onsubmit="handleOrderSubmit(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-brand-cacao mb-1">Họ và tên của bạn *</label>
+          <input type="text" id="custName" required placeholder="Ví dụ: Hoàng Mai Linh" class="w-full text-xs px-4 py-3 rounded-xl border border-brand-border focus:outline-none focus:border-brand-cacao bg-brand-cream/40">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-brand-cacao mb-1">Số điện thoại *</label>
+            <input type="tel" id="custPhone" required placeholder="09xxxxxxxx" class="w-full text-xs px-4 py-3 rounded-xl border border-brand-border focus:outline-none focus:border-brand-cacao bg-brand-cream/40">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-brand-cacao mb-1">Tỉnh / Thành phố *</label>
+            <input type="text" id="custCity" required placeholder="Hà Nội, TP.HCM,..." class="w-full text-xs px-4 py-3 rounded-xl border border-brand-border focus:outline-none focus:border-brand-cacao bg-brand-cream/40">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-brand-cacao mb-1">Địa chỉ chi tiết nhận hàng *</label>
+          <input type="text" id="custAddress" required placeholder="Số nhà, tên đường, phường/xã..." class="w-full text-xs px-4 py-3 rounded-xl border border-brand-border focus:outline-none focus:border-brand-cacao bg-brand-cream/40">
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-brand-cacao mb-1">Ghi chú chọn màu kẹp / yêu cầu đóng gói</label>
+          <input type="text" id="custNote" placeholder="Ví dụ: Lấy kẹp màu trà sữa, gói hộp quà tặng bạn..." class="w-full text-xs px-4 py-3 rounded-xl border border-brand-border focus:outline-none focus:border-brand-cacao bg-brand-cream/40">
+        </div>
+
+        <!-- Phương thức thanh toán minh bạch -->
+        <div class="space-y-2 pt-1">
+          <label class="block text-xs font-semibold text-brand-cacao">Phương thức thanh toán:</label>
+          <div class="grid grid-cols-2 gap-3 text-xs">
+            <label class="flex items-center gap-2 p-3 rounded-xl border border-brand-border bg-white cursor-pointer hover:border-brand-cacao">
+              <input type="radio" name="paymentMethod" value="COD" checked class="text-brand-cacao">
+              <span>Thanh toán COD khi nhận</span>
+            </label>
+            <label class="flex items-center gap-2 p-3 rounded-xl border border-brand-border bg-white cursor-pointer hover:border-brand-cacao">
+              <input type="radio" name="paymentMethod" value="QR" class="text-brand-cacao">
+              <span>Chuyển khoản VietQR</span>
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" class="w-full mt-4 bg-brand-cacao hover:bg-brand-cacaoLight text-brand-cream font-bold py-3.5 px-6 rounded-full transition-colors flex items-center justify-center gap-2 text-sm shadow-md">
+          <i data-lucide="check" class="w-4 h-4 text-brand-blush"></i>
+          <span>Xác nhận đặt đơn hàng này</span>
+        </button>
+
+        <p class="text-[11px] text-center text-brand-cacaoMuted pt-1">
+          Nhân viên HAN sẽ gọi điện hoặc gửi tin nhắn xác nhận đơn trước khi đóng gói gửi đi.
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- MODAL 3: TƯ VẤN 1:1 NHANH (CONSULTATION MODAL) -->
+  <!-- ========================================================================= -->
+  <div id="consultModal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-brand-cacao/60 badge-blur flex items-center justify-center p-4">
+    <div class="relative w-full max-w-md bg-white rounded-3xl shadow-2xl border border-brand-border p-6 sm:p-8 animate-fadeIn text-left">
+      <button onclick="closeConsultationModal()" class="absolute top-4 right-4 p-2 rounded-full bg-brand-ivory hover:bg-brand-blushSoft text-brand-cacao transition-colors" aria-label="Đóng">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="text-center mb-6">
+        <div class="w-12 h-12 rounded-full bg-brand-blushSoft text-brand-blushDark mx-auto flex items-center justify-center mb-3">
+          <i data-lucide="sparkles" class="w-6 h-6"></i>
+        </div>
+        <h3 class="font-serif text-2xl font-semibold text-brand-cacao">Tư Vấn Chọn Phụ Kiện 1:1</h3>
+        <p class="text-xs text-brand-cacaoMuted mt-1.5 leading-relaxed">
+          Gửi thông tin về độ dài/độ dày tóc hoặc phong cách bạn muốn hướng tới, chuyên viên HAN sẽ phản hồi gợi ý trong 15 phút.
+        </p>
+      </div>
+
+      <form onsubmit="handleConsultSubmit(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-brand-cacao mb-1">Số điện thoại hoặc Zalo *</label>
+          <input type="text" id="consultContact" required placeholder="Số điện thoại để HAN liên hệ..." class="w-full text-xs px-4 py-3 rounded-xl border border-brand-border focus:outline-none focus:border-brand-cacao bg-brand-cream/40">
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-brand-cacao mb-1">Mái tóc của bạn thuộc loại nào?</label>
+          <select id="consultHairType" class="w-full text-xs px-4 py-3 rounded-xl border border-brand-border focus:outline-none focus:border-brand-cacao bg-brand-cream/40">
+            <option value="Tóc mỏng/ngắn">Tóc mỏng / ngắn ngang vai</option>
+            <option value="Tóc vừa">Tóc độ dày vừa phải, dài ngang lưng</option>
+            <option value="Tóc dày">Tóc rất dày, sợi to, khó giữ nếp</option>
+            <option value="Mua làm quà tặng">Mình muốn mua làm quà tặng bạn bè</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-brand-cacao mb-1">Dịp bạn cần phối đồ</label>
+          <input type="text" id="consultOccasion" placeholder="Ví dụ: Đi làm văn phòng, đi chụp ảnh cưới, đi cà phê..." class="w-full text-xs px-4 py-3 rounded-xl border border-brand-border focus:outline-none focus:border-brand-cacao bg-brand-cream/40">
+        </div>
+
+        <button type="submit" class="w-full bg-brand-cacao hover:bg-brand-cacaoLight text-brand-cream font-bold py-3.5 px-6 rounded-full transition-colors flex items-center justify-center gap-2 text-sm">
+          <i data-lucide="send" class="w-4 h-4 text-brand-blush"></i>
+          <span>Gửi yêu cầu tư vấn miễn phí</span>
+        </button>
+
+        <div class="text-center pt-2">
+          <span class="text-xs text-brand-cacaoMuted">Hoặc gọi trực tiếp: </span>
+          <a href="tel:0878267765" class="text-xs font-bold text-brand-blushDark hover:underline">0878.267.765</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- MODAL 4: GIỎ HÀNG MINI (CART DRAWER/MODAL) -->
+  <!-- ========================================================================= -->
+  <div id="cartModal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-brand-cacao/60 badge-blur flex items-center justify-center p-4">
+    <div class="relative w-full max-w-md bg-white rounded-3xl shadow-2xl border border-brand-border p-6 animate-fadeIn text-left">
+      <button onclick="toggleCartModal(false)" class="absolute top-4 right-4 p-2 rounded-full bg-brand-ivory hover:bg-brand-blushSoft text-brand-cacao transition-colors" aria-label="Đóng">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <h3 class="font-serif text-xl font-semibold text-brand-cacao mb-4 flex items-center gap-2">
+        <i data-lucide="shopping-bag" class="w-5 h-5 text-brand-blushDark"></i>
+        <span>Giỏ Hàng Của Bạn</span>
+      </h3>
+
+      <div id="cartItemList" class="space-y-3 max-h-60 overflow-y-auto pr-1">
+        <!-- Rendered by JS -->
+      </div>
+
+      <div class="pt-4 mt-4 border-t border-brand-border space-y-3">
+        <div class="flex items-center justify-between text-sm">
+          <span class="text-brand-cacaoMuted">Tạm tính:</span>
+          <span id="cartSubtotal" class="font-serif font-bold text-brand-cacao text-base">45.000Đ</span>
+        </div>
+        <p class="text-[11px] text-emerald-700 bg-emerald-50 p-2 rounded-lg">
+          🎉 Miễn phí giao hàng toàn quốc khi đạt 199.000Đ!
+        </p>
+
+        <div class="flex items-center gap-2">
+          <button onclick="checkoutCart()" class="w-full bg-brand-cacao hover:bg-brand-cacaoLight text-brand-cream text-xs sm:text-sm font-bold py-3 px-4 rounded-full transition-colors flex items-center justify-center gap-2">
+            <span>Tiến hành đặt hàng</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 text-brand-blush"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- MODAL 5: CHÍNH SÁCH CHI TIẾT (POLICY MODAL) -->
+  <!-- ========================================================================= -->
+  <div id="policyModal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-brand-cacao/60 badge-blur flex items-center justify-center p-4">
+    <div class="relative w-full max-w-lg bg-white rounded-3xl shadow-2xl border border-brand-border p-6 sm:p-8 animate-fadeIn text-left">
+      <button onclick="closePolicyModal()" class="absolute top-4 right-4 p-2 rounded-full bg-brand-ivory hover:bg-brand-blushSoft text-brand-cacao transition-colors" aria-label="Đóng">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <h3 id="policyTitle" class="font-serif text-xl font-semibold text-brand-cacao mb-4"></h3>
+      <div id="policyBody" class="text-xs sm:text-sm text-brand-cacaoMuted leading-relaxed space-y-3 max-h-96 overflow-y-auto pr-2"></div>
+
+      <div class="pt-4 mt-6 border-t border-brand-border text-right">
+        <button onclick="closePolicyModal()" class="text-xs font-semibold bg-brand-ivory text-brand-cacao px-5 py-2.5 rounded-full border border-brand-border hover:bg-brand-blushSoft transition-colors">
+          Đã hiểu
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <!-- ========================================================================= -->
+  <div id="toast" class="fixed top-6 right-6 z-50 hidden bg-brand-cacao text-white text-xs px-5 py-3.5 rounded-2xl shadow-card border border-brand-blush/30 items-center gap-3 transition-all">
+    <i data-lucide="check-circle" class="w-4 h-4 text-brand-blush"></i>
+    <span id="toastMessage">Thông báo</span>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- JAVASCRIPT LOGIC (Catalog, Quick View, Cart, Modals, FAQ) -->
+  <!-- ========================================================================= -->
+  <script>
+    // Product Database (Chuẩn dữ liệu sản phẩm thực tế)
+    const products = {
+      'clip-french': {
+        id: 'clip-french',
+        name: 'Kẹp Bán Nguyệt Phong Cách Pháp',
+        category: 'Kẹp càng cua',
+        catCode: 'claw',
+        price: '45.000Đ',
+        priceNum: 45000,
+        oldPrice: '55.000Đ',
+        tag: 'Best Seller',
+        image: 'https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=600&q=80',
+        description: 'Mẫu kẹp càng cua dáng bán nguyệt kinh điển phong cách quý cô Pháp. Được làm từ chất liệu nhựa acetate bóng mờ chịu lực, răng kẹp được mài bo tròn ôm khít búi tóc mà không làm đau da đầu.',
+        benefits: [
+          '• Giữ nếp tóc chắc chắn từ sáng đến tối.',
+          '• Lò xo hợp kim sơn tĩnh điện chống gỉ sét.',
+          '• Phù hợp phối cùng sơ mi, blazer và đầm dạo phố.'
+        ]
+      },
+      'scrunchie-silk': {
+        id: 'scrunchie-silk',
+        name: 'Scrunchie Lụa Satin Ngọc Trai',
+        category: 'Scrunchies & Dây buộc',
+        catCode: 'scrunchie',
+        price: '35.000Đ',
+        priceNum: 35000,
+        oldPrice: '45.000Đ',
+        tag: 'Yêu thích',
+        image: 'https://images.unsplash.com/photo-1620012253295-c15c429fbb39?auto=format&fit=crop&w=600&q=80',
+        description: 'Dây buộc tóc scrunchie bọc lụa satin mướt nhẹ, bảo vệ biểu bì tóc khỏi ma sát và gãy rụng. Thiết kế đính hạt ngọc trai nhân tạo làm điểm xuyết sang trọng.',
+        benefits: [
+          '• Không hằn nếp gấp tóc sau nhiều giờ buộc.',
+          '• Chun co giãn cao cấp, êm ái khi đeo vào cổ tay như phụ kiện.',
+          '• Màu sắc pastel nhã nhặn dễ phối với mọi trang phục.'
+        ]
+      },
+      'bow-velvet': {
+        id: 'bow-velvet',
+        name: 'Kẹp Nơ Nhung Dài Tiểu Thư',
+        category: 'Nơ, ruy băng & Băng đô',
+        catCode: 'bow',
+        price: '49.000Đ',
+        priceNum: 49000,
+        oldPrice: '60.000Đ',
+        tag: 'New Arrival',
+        image: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80',
+        description: 'Kẹp tóc nơ nhung dài phong cách tiểu thư cổ điển. Tà ruy băng mềm buông rủ tôn trọn nét nữ tính khi buộc tóc nửa đầu hoặc kẹp phía sau gáy.',
+        benefits: [
+          '• Chất nhung tuyết mịn màng, sắc màu vintage sâu lắng.',
+          '• Xương kẹp bấm kim loại chắc chắn, không bị lỏng lẻo.',
+          '• Điểm nhấn tuyệt vời cho các buổi hẹn hò, đi tiệc, chụp ảnh.'
+        ]
+      },
+      'scarf-vintage': {
+        id: 'scarf-vintage',
+        name: 'Khăn Lụa Vuông Vintage (70x70cm)',
+        category: 'Khăn lụa phối đồ',
+        catCode: 'scarf',
+        price: '69.000Đ',
+        priceNum: 69000,
+        oldPrice: '89.000Đ',
+        tag: 'Must-have',
+        image: 'https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=600&q=80',
+        description: 'Khăn lụa vuông họa tiết hội họa trừu tượng thanh nhã. Đa năng với 4 cách phối đồ: buộc tóc turban/đuôi ngựa, thắt nơ cổ áo sơ mi, quàng cổ áo thun, hoặc thắt quai túi xách.',
+        benefits: [
+          '• Chất lụa thoáng khí, bay nhẹ, viền may cuộn tinh tế.',
+          '• Nâng tầm ngay set đồ basic (áo thun + quần jeans).',
+          '• Đi kèm hướng dẫn 5 cách thắt khăn phong cách Parisian.'
+        ]
+      }
+    };
+
+    // Cart State
+    let cart = [
+      { id: 'clip-french', name: 'Kẹp Bán Nguyệt Phong Cách Pháp', price: 45000, qty: 1 }
+    ];
+
+    let currentSelectedProduct = products['clip-french'];
+
+    // Initialize Lucide Icons
+    function initIcons() {
+      if (window.lucide) {
+        window.lucide.createIcons();
+      }
+    }
+    document.addEventListener("DOMContentLoaded", initIcons);
+
+    // Toast Function
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toastMessage');
+      toastMsg.innerText = message;
+      toast.classList.remove('hidden');
+      toast.classList.add('flex');
+      initIcons();
+      setTimeout(() => {
+        toast.classList.add('hidden');
+        toast.classList.remove('flex');
+      }, 3500);
+    }
+
+    // Mobile Menu Toggle
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+
+    // Filter Product Catalog
+    function filterCatalog(category, btnElement) {
+      // Update Buttons styling
+      const buttons = document.querySelectorAll('.cat-filter-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-brand-cacao', 'text-brand-cream');
+        btn.classList.add('bg-brand-ivory', 'text-brand-cacao');
+      });
+      if (btnElement) {
+        btnElement.classList.add('bg-brand-cacao', 'text-brand-cream');
+        btnElement.classList.remove('bg-brand-ivory', 'text-brand-cacao');
+      }
+
+      // Filter product items
+      const items = document.querySelectorAll('.product-item');
+      items.forEach(item => {
+        const itemCat = item.getAttribute('data-category');
+        if (category === 'all' || itemCat === category) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    // Quick View Modal
+    function quickViewProduct(productId) {
+      const prod = products[productId];
+      if (!prod) return;
+      currentSelectedProduct = prod;
+
+      document.getElementById('qvImage').src = prod.image;
+      document.getElementById('qvTag').innerText = prod.tag;
+      document.getElementById('qvCategory').innerText = prod.category;
+      document.getElementById('qvTitle').innerText = prod.name;
+      document.getElementById('qvPrice').innerText = prod.price;
+      document.getElementById('qvOldPrice').innerText = prod.oldPrice;
+      document.getElementById('qvDescription').innerText = prod.description;
+
+      const benefitsContainer = document.getElementById('qvBenefits');
+      benefitsContainer.innerHTML = '';
+      prod.benefits.forEach(b => {
+        const p = document.createElement('p');
+        p.innerText = b;
+        benefitsContainer.appendChild(p);
+      });
+
+      document.getElementById('quickViewModal').classList.remove('hidden');
+      document.getElementById('quickViewModal').classList.add('flex');
+      initIcons();
+    }
+
+    function closeQuickViewModal() {
+      document.getElementById('quickViewModal').classList.add('hidden');
+      document.getElementById('quickViewModal').classList.remove('flex');
+    }
+
+    function addToCartFromModal() {
+      addToCart(currentSelectedProduct.id, currentSelectedProduct.name, currentSelectedProduct.priceNum);
+      closeQuickViewModal();
+    }
+
+    function buyNowFromModal() {
+      closeQuickViewModal();
+      openOrderModal(currentSelectedProduct.name, currentSelectedProduct.price);
+    }
+
+    // Cart System
+    function addToCart(id, name, price) {
+      const existing = cart.find(item => item.id === id);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({ id, name, price, qty: 1 });
+      }
+      updateCartUI();
+      showToast(`Đã thêm "${name}" vào giỏ hàng!`);
+    }
+
+    function updateCartUI() {
+      const count = cart.reduce((total, item) => total + item.qty, 0);
+      document.getElementById('cartCountBadge').innerText = count;
+
+      const listContainer = document.getElementById('cartItemList');
+      if (cart.length === 0) {
+        listContainer.innerHTML = '<p class="text-xs text-brand-cacaoMuted py-4 text-center">Giỏ hàng của bạn đang trống.</p>';
+        document.getElementById('cartSubtotal').innerText = '0Đ';
+        return;
+      }
+
+      let subtotal = 0;
+      listContainer.innerHTML = '';
+      cart.forEach((item, index) => {
+        subtotal += item.price * item.qty;
+        const div = document.createElement('div');
+        div.className = 'flex items-center justify-between text-xs p-2.5 rounded-xl bg-brand-ivory border border-brand-border';
+        div.innerHTML = `
+          <div>
+            <p class="font-semibold text-brand-cacao">${item.name}</p>
+            <p class="text-brand-cacaoMuted">${item.price.toLocaleString('vi-VN')}Đ x ${item.qty}</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="changeQty(${index}, -1)" class="w-6 h-6 rounded-full bg-white border border-brand-border flex items-center justify-center font-bold text-brand-cacao">-</button>
+            <span class="font-medium">${item.qty}</span>
+            <button onclick="changeQty(${index}, 1)" class="w-6 h-6 rounded-full bg-white border border-brand-border flex items-center justify-center font-bold text-brand-cacao">+</button>
+          </div>
+        `;
+        listContainer.appendChild(div);
+      });
+      document.getElementById('cartSubtotal').innerText = `${subtotal.toLocaleString('vi-VN')}Đ`;
+    }
+
+    function changeQty(index, delta) {
+      cart[index].qty += delta;
+      if (cart[index].qty <= 0) {
+        cart.splice(index, 1);
+      }
+      updateCartUI();
+    }
+
+    function toggleCartModal(show) {
+      const modal = document.getElementById('cartModal');
+      if (show) {
+        updateCartUI();
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        initIcons();
+      } else {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    }
+
+    function checkoutCart() {
+      toggleCartModal(false);
+      const totalNames = cart.map(i => `${i.name} (x${i.qty})`).join(', ');
+      const subtotal = cart.reduce((tot, i) => tot + i.price * i.qty, 0);
+      openOrderModal(totalNames, `${subtotal.toLocaleString('vi-VN')}Đ`);
+    }
+
+    // Order Checkout Modal
+    function openOrderModal(itemName, itemPrice) {
+      document.getElementById('orderItemName').innerText = itemName;
+      document.getElementById('orderItemPrice').innerText = itemPrice;
+      const modal = document.getElementById('orderModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      initIcons();
+    }
+
+    function toggleOrderModal(show) {
+      const modal = document.getElementById('orderModal');
+      if (show) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      } else {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    }
+
+    function handleOrderSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('custName').value;
+      const phone = document.getElementById('custPhone').value;
+      const city = document.getElementById('custCity').value;
+      const address = document.getElementById('custAddress').value;
+      
+      toggleOrderModal(false);
+      alert(`Cảm ơn bạn ${name}! HAN đã tiếp nhận đơn hàng thành công.\nChúng mình sẽ liên hệ số điện thoại ${phone} để xác nhận và gửi hàng đến ${address}, ${city} sớm nhất.`);
+      showToast('Đặt hàng thành công! HAN đang chuẩn bị kiện hàng cho bạn.');
+      // Reset form
+      e.target.reset();
+    }
+
+    // Consultation Modal
+    function openConsultationModal() {
+      const modal = document.getElementById('consultModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      initIcons();
+    }
+
+    function closeConsultationModal() {
+      const modal = document.getElementById('consultModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function handleConsultSubmit(e) {
+      e.preventDefault();
+      const contact = document.getElementById('consultContact').value;
+      closeConsultationModal();
+      alert(`HAN đã nhận thông tin tư vấn từ bạn (${contact}). Chuyên viên phối đồ của HAN sẽ liên hệ hỗ trợ bạn ngay qua Zalo/SĐT trong 15 phút tới!`);
+      showToast('Đã gửi yêu cầu tư vấn thành công!');
+      e.target.reset();
+    }
+
+    // Newsletter Submit
+    function handleNewsletter(e) {
+      e.preventDefault();
+      const email = document.getElementById('newsletterEmail').value;
+      alert(`Cảm ơn bạn! HAN đã gửi mã ưu đãi 10% đến email ${email}. Hãy kiểm tra hộp thư nhé!`);
+      showToast('Đăng ký nhận bản tin thành công!');
+      e.target.reset();
+    }
+
+    // FAQ Accordion Toggle
+    function toggleFaq(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('svg, i');
+      
+      const isHidden = content.classList.contains('hidden');
+      
+      // Close other FAQs
+      document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+      document.querySelectorAll('#faq button svg, #faq button i').forEach(i => i.style.transform = 'rotate(0deg)');
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+        if (icon) icon.style.transform = 'rotate(180deg)';
+      }
+    }
+
+    // Policy Modal Content
+    const policyData = {
+      shipping: {
+        title: 'Chính Sách Giao Hàng & Đồng Kiểm',
+        content: `
+          <p><strong>1. Phạm vi & Thời gian giao hàng:</strong></p>
+          <p>• HAN giao hàng tận nơi trên toàn quốc qua các đơn vị vận chuyển uy tín (Giao Hàng Nhanh, Viettel Post, GHTK).</p>
+          <p>• Nội thành Hà Nội & TP.HCM: 1 – 2 ngày làm việc (Có hỗ trợ ship hỏa tốc trong 2H).</p>
+          <p>• Các tỉnh thành khác: 2 – 4 ngày làm việc.</p>
+          <p><strong>2. Phí vận chuyển:</strong></p>
+          <p>• Phí ship đồng giá 25.000Đ toàn quốc.</p>
+          <p>• <strong>MIỄN PHÍ VẬN CHUYỂN</strong> cho tất cả đơn hàng từ 199.000Đ.</p>
+          <p><strong>3. Quyền đồng kiểm:</strong></p>
+          <p>• Quý khách được quyền mở kiện hàng kiểm tra mẫu mã, màu sắc và số lượng trước khi thanh toán.</p>
+        `
+      },
+      payment: {
+        title: 'Chính Sách Thanh Toán Minh Bạch',
+        content: `
+          <p>HAN hỗ trợ các hình thức thanh toán thuận tiện và an toàn nhất:</p>
+          <p><strong>1. Thanh toán khi nhận hàng (COD):</strong> Quý khách thanh toán tiền mặt trực tiếp cho nhân viên giao hàng sau khi đồng kiểm ưng ý.</p>
+          <p><strong>2. Chuyển khoản qua mã VietQR:</strong> Quý khách có thể quét mã QR ngân hàng hiển thị trên bưu kiện hoặc qua hotline 0878267765 để thanh toán nhanh chóng không mất phí.</p>
+          <p>HAN cam kết không thu bất kỳ phụ phí ẩn nào ngoài giá bán và phí vận chuyển đã thông báo trước.</p>
+        `
+      },
+      return: {
+        title: 'Chính Sách Đổi Trả Trong 7 Ngày',
+        content: `
+          <p><strong>1. Điều kiện áp dụng đổi trả:</strong></p>
+          <p>• Sản phẩm còn trong vòng 7 ngày kể từ thời điểm nhận hàng.</p>
+          <p>• Sản phẩm còn nguyên tem mác, hộp đựng và chưa qua sử dụng.</p>
+          <p><strong>2. Trường hợp được đổi hàng miễn phí 100%:</strong></p>
+          <p>• Sản phẩm bị lỗi do nhà sản xuất (gãy răng kẹp, bung lò xo, đường may chỉ lỗi).</p>
+          <p>• Giao sai màu sắc, sai phân loại mẫu so với đơn đặt hàng.</p>
+          <p><strong>3. Hỗ trợ đổi mẫu theo sở thích:</strong> Quý khách muốn đổi sang màu khác hoặc kích cỡ kẹp khác vui lòng hỗ trợ phí ship 2 chiều.</p>
+        `
+      },
+      privacy: {
+        title: 'Chính Sách Bảo Mật Thông Tin Khách Hàng',
+        content: `
+          <p>HAN cam kết bảo vệ tuyệt đối thông tin cá nhân của bạn:</p>
+          <p><strong>1. Mục đích thu thập:</strong> Thông tin (họ tên, số điện thoại, địa chỉ nhận hàng) chỉ dùng để xác nhận đơn hàng, giao kiện hàng và hỗ trợ chăm sóc khách hàng sau mua.</p>
+          <p><strong>2. Cam kết bảo mật:</strong> HAN tuyệt đối không bán, chia sẻ hoặc tiết lộ thông tin của quý khách cho bên thứ ba vì bất kỳ mục đích thương mại nào khác.</p>
+          <p>Mọi thắc mắc về quyền bảo mật dữ liệu, quý khách vui lòng liên hệ trực tiếp email: <strong>HAN429@gmail.com</strong>.</p>
+        `
+      }
+    };
+
+    function openPolicyModal(type) {
+      const data = policyData[type];
+      if (!data) return;
+      document.getElementById('policyTitle').innerText = data.title;
+      document.getElementById('policyBody').innerHTML = data.content;
+      document.getElementById('policyModal').classList.remove('hidden');
+      document.getElementById('policyModal').classList.add('flex');
+    }
+
+    function closePolicyModal() {
+      document.getElementById('policyModal').classList.add('hidden');
+      document.getElementById('policyModal').classList.remove('flex');
+    }
+  </script>
+</body>
+</html>
